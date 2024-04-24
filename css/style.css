@@ -734,6 +734,18 @@ footer .bottom ul li {
         display: none;
     }
 
+    .con02 .workList li a .textBox .info {
+        flex-flow: column;
+    }
+
+    .con02 .workList li a .textBox .info p:first-child {
+        margin-bottom: 1px;
+        
+    }
+
+    .con02 .workList li a .textBox .info p:last-child {
+        text-align: right;
+    }
     footer .bottom {
         font-size: 17px;
     }
@@ -748,4 +760,5 @@ footer .bottom ul li {
     .con03.motion .simply-scroll .simply-scroll-clip {
         transform: rotate(10deg) translate(20%, 300px) scale(1.2);
     }
+
 }
