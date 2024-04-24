@@ -510,6 +510,19 @@ footer .bottom ul li {
         box-sizing: border-box;
     }
 
+    .con02 .workList li a .textBox .info {
+        flex-flow: column;
+    }
+
+    .con02 .workList li a .textBox .info p:first-child {
+        margin-bottom: 1px;
+        
+    }
+
+    .con02 .workList li a .textBox .info p:last-child {
+        text-align: right;
+    }
+
     footer .textWrap {
         font-size: 144px;
     }
@@ -734,18 +747,6 @@ footer .bottom ul li {
         display: none;
     }
 
-    .con02 .workList li a .textBox .info {
-        flex-flow: column;
-    }
-
-    .con02 .workList li a .textBox .info p:first-child {
-        margin-bottom: 1px;
-        
-    }
-
-    .con02 .workList li a .textBox .info p:last-child {
-        text-align: right;
-    }
     footer .bottom {
         font-size: 17px;
     }
