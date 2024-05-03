@@ -1,5 +1,4 @@
 @charset "utf-8";
-
 /* Google-font */
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Infant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+KR:wght@100..900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
@@ -51,6 +50,62 @@ body {
     overflow: hidden;
     background-color: #000;
     color: #fff;
+}
+
+.hide {
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    border: 0;
+    width: 1px;
+    height: 1px;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+
+#notice {
+    display: none;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 99999;
+    font-size: 14px;
+}
+
+.notice-inner {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.notice-img {
+    width: 300px;
+    height: 300px;
+    background: url(../images/notice.png) no-repeat center;
+}
+
+.notice-close {
+    display: block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 20px;
+    border-radius: 50px;
+    font-weight: bold;
+    text-align: center;
+    background-color: #F1CB00;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.notice-close:hover {
+    background-color: #171717;
+    text-decoration: underline;
 }
 
 /* header */
@@ -150,7 +205,7 @@ header .menuOpen {
 
 
 .visual .subText {
-    margin-left: 20%;
+    margin-left: 10%;
 }
 
 .visual .scroll {
@@ -161,7 +216,7 @@ header .menuOpen {
 
 .visual .svgAni {
     position: absolute;
-    right: 4%;
+    right: 3%;
     top: 32%;
     transform: rotate(-10deg);
     width: 50%;
@@ -474,18 +529,6 @@ footer .bottom ul {
 
 footer .bottom ul li {
     margin-right: 30px;
-}
-
-/* resonsiveWeb */
-/* 1650px ~ 1301px */
-@media all and (max-width: 1650px) {
-    .visual .svgAni {
-        top: 17%;
-    }
-
-    .visual .subText {
-        margin-left: 10%;
-    }
 }
 
 /* 1300px ~ 1025px */
